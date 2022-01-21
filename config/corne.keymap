@@ -44,7 +44,7 @@
 	chosen {
 		zmk,underglow = &led_strip;
 	};
-
+};
 
 /*
  * Temporarily here because nice nano v2 spi is not defined on ZMk YET
