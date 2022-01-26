@@ -5,10 +5,10 @@ image:
 tasks:
   - name: West Init
     init: |
-      cd ..
-      west init -l $GITPOD_REPO_ROOT
+      west init -l config
       west update --narrow
-      cd $GITPOD_REPO_ROOT
+      west zephyr-export
+      export PATH=${PATH}:${GITPOD_REPO_ROOT}/bin
 vscode:
   extensions:
    - https://github.com/microsoft/vscode-cpptools/releases/download/1.7.1/cpptools-linux.vsix

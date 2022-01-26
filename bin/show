@@ -1,0 +1,3 @@
+#!/bin/bash
+if [ -f "build/zephyr/nice_nano_v2.dts.pre.tmp" ]; then cat -n build/zephyr/nice_nano_v2.dts.pre.tmp; fi
+if [ -f "build/zephyr/zephyr.dts" ]; then cat -n build/zephyr/zephyr.dts; fi

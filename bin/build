@@ -1,0 +1,3 @@
+#!/bin/bash
+west build -s zmk/app -b nice_nano_v2 -- -DZMK_CONFIG=${PWD}/config -DSHIELD=corne_left
+west build -s zmk/app -b nice_nano_v2 -- -DZMK_CONFIG=${PWD}/config -DSHIELD=corne_right 
