@@ -1,2 +1,2 @@
 #include "42keys.keymap"
-//#include "rgb_led.dtsi"
+#include "rgb_led.dtsi"
