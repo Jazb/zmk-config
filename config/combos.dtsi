@@ -17,24 +17,24 @@ compatible = "zmk,combos";
   };
 
 /* Brackets */
-COMBO(left_brace, &kp LEFT_BRACE, 12 13, BASE)
-COMBO(right_brace, &kp RIGHT_BRACE, 22 13, BASE)
-COMBO(left_bracket, &kp LEFT_BRACKET, 14 15, BASE)
-COMBO(right_bracket, &kp RIGHT_BRACKET, 20 21, BASE)
-COMBO(left_parenthesis, &kp LEFT_PARENTHESIS, 16 17, BASE)
-COMBO(right_parenthesis, &kp RIGHT_PARENTHESIS, 18 19, BASE)
-COMBO(less_than, &kp LESS_THAN, 28 29, BASE)
-COMBO(greater_than, &kp GREATER_THAN, 30 31, BASE)
+COMBO(left_brace, &kp LEFT_BRACE, 12 13, DEF)
+COMBO(right_brace, &kp RIGHT_BRACE, 22 13, DEF)
+COMBO(left_bracket, &kp LEFT_BRACKET, 14 15, DEF)
+COMBO(right_bracket, &kp RIGHT_BRACKET, 20 21, DEF)
+COMBO(left_parenthesis, &kp LEFT_PARENTHESIS, 16 17, DEF)
+COMBO(right_parenthesis, &kp RIGHT_PARENTHESIS, 18 19, DEF)
+COMBO(less_than, &kp LESS_THAN, 28 29, DEF)
+COMBO(greater_than, &kp GREATER_THAN, 30 31, DEF)
 
 /* Text processing */
 // Not need for now
 
 /* System */
-COMBO(power, &kp C_POWER, 5 6, BASE)
-COMBO(menu_search, &kp LG(LS(SLASH)), 17 18, BASE)
-COMBO(spotlight, &kp LG(SPACE), 29 30, BASE)
-COMBO(mic_mute_left, &kp LG(BACKSLASH), 24 25, BASE)
-COMBO(mic_mute_right, &kp LG(BACKSLASH), 34 35, BASE)
+COMBO(power, &kp C_POWER, 5 6, DEF)
+COMBO(menu_search, &kp LG(LS(SLASH)), 17 18, DEF)
+COMBO(spotlight, &kp LG(SPACE), 29 30, DEF)
+COMBO(mic_mute_left, &kp LG(BACKSLASH), 24 25, DEF)
+COMBO(mic_mute_right, &kp LG(BACKSLASH), 34 35, DEF)
 
 /* Media */
 // Not need for now
