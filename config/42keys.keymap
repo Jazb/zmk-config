@@ -20,6 +20,44 @@
                 #include "combos.dtsi"
         };
 
+        behaviors {
+
+          #include "macros.dtsi"
+          #include "mod_morphs.dtsi"
+
+          skq: sticky_key_quick_release {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_KEY_QUICK_RELEASE";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            quick-release;
+            release-after-ms = <STICKY_KEY_TIMEOUT>;
+          };
+
+          // Use hold-tap to enable rolling sticky keys:
+          // https://github.com/zmkfirmware/zmk/issues/829#issuecomment-979864774
+          nk: not_so_sticky_key {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NOT_SO_STICKY_KEY";
+            #binding-cells = <2>;
+            tapping_term_ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&sk>;
+          };
+
+          // A hold-tap that activates without delay (like `&mo`)
+          mo_tap: mo_with_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MO_WITH_TAP";
+            #binding-cells = <2>;
+            tapping_term_ms = <0>;
+            retro-tap;
+            flavor = "hold-preferred";
+            bindings = <&mo>, <&kp>;
+          };
+
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
