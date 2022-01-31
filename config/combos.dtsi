@@ -1,0 +1,43 @@
+/*                KEY POSITIONS
+
+  ╭────────────────────────╮ ╭─────────────────────────╮
+  │  0   1   2   3   4   5 │ │  6   7   8   9   10  11 │
+  │ 12  13  14  15  16  17 │ │ 18  19  20  21   22  23 │
+  │ 24  25  26  27  28  29 │ │ 30  31  32  33   34  35 │
+  ╰───────────╮ 36  37  38 │ │ 39  40  41 ╭────────────╯
+              ╰────────────╯ ╰────────────╯            */
+
+compatible = "zmk,combos";
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <LAYERS>; \
+  };
+
+/* Brackets */
+COMBO(left_brace, &kp LEFT_BRACE, 12 13, BASE)
+COMBO(right_brace, &kp RIGHT_BRACE, 22 13, BASE)
+COMBO(left_bracket, &kp LEFT_BRACKET, 14 15, BASE)
+COMBO(right_bracket, &kp RIGHT_BRACKET, 20 21, BASE)
+COMBO(left_parenthesis, &kp LEFT_PARENTHESIS, 16 17, BASE)
+COMBO(right_parenthesis, &kp RIGHT_PARENTHESIS, 18 19, BASE)
+COMBO(less_than, &kp LESS_THAN, 28 29, BASE)
+COMBO(greater_than, &kp GREATER_THAN, 30 31, BASE)
+
+/* Text processing */
+// Not need for now
+
+/* System */
+COMBO(power, &kp C_POWER, 5 6, BASE)
+COMBO(menu_search, &kp LG(LS(SLASH)), 17 18, BASE)
+COMBO(spotlight, &kp LG(SPACE), 29 30, BASE)
+COMBO(mic_mute_left, &kp LG(BACKSLASH), 24 25, BASE)
+COMBO(mic_mute_right, &kp LG(BACKSLASH), 34 35, BASE)
+
+/* Media */
+// Not need for now
+
+/* Keyboard */
+// Not need for now
