@@ -76,7 +76,7 @@
 //                      | GUI  | TL0 | SPC   |   | ENT | TG4 | ALT |
                         label = "navigation";
 			bindings = <
-   &trans &kp LA(LG(ESC)) &mwh SCROLL_LEFT  &mmv MOVE_UP   &mwh SCROLL_DOWN &mt H Q     &mkp LCKL &kp LC(LS(TAB)) &kp RC(TAB)  &kp LG(LBKT) &none     &trans
+   &trans &kp LA(LG(ESC)) &mwh SCROLL_LEFT  &mmv MOVE_UP   &mwh SCROLL_DOWN &mt H Q     &mkp LCLK &kp LC(LS(TAB)) &kp RC(TAB)  &kp LG(LBKT) &none     &trans
    &trans &kp LG(TAB)     &mmv MOVE_LEFT    &out OUT_TOG   &mmv MOVE_RIGHT  &mt LG DEL  &kp LEFT  &kp DOWN       &kp UP        &kp RIGHT   &mkp RCLK  &kp GLOBE
    &trans &kp LG(GRAVE)   &mwh SCROLL_RIGHT &mmv MOVE_DOWN &mwh SCROLL_UP   &none       &kp HOME  &kp PG_DN      &kp PG_UP     &kp END     &kp RSHIFT &trans
                     	                    &kp LGUI       &to 0            &kp SPACE   &kp RET   &tog 4          &kp RALT
