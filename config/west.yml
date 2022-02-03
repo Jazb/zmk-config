@@ -4,12 +4,10 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: krikun98
       url-base: https://github.com/krikun98
-    - name: jazb
-      url-base: https://github.com/jazb
   projects:
     - name: zmk
-      remote: jazb
-      revision: local-dev 
+      remote: krikun98
+      revision: mouse-pr 
       import: app/west.yml
   self:
     path: config
